@@ -35,7 +35,7 @@ namespace Triangle_Vorm
         public double AreaOfTriangle() // нахождение площади
         {
             double S = 0;
-            S = 1 / 2 * b * h;
+            S = 1 / 2 * b * h;//формула
             return S;
         }
         public double Perimeter() // сумма всех сторон типо double
