@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\Triangle_Vorm.exe.config
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\Triangle_Vorm.exe
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\Triangle_Vorm.pdb
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.Base.dll
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.WebBrowser.dll
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.WebEngine.dll
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.Base.xml
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.WebBrowser.xml
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\bin\Debug\EO.WebEngine.xml
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.Form1.resources
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.exe
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.pdb
