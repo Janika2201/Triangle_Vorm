@@ -13,12 +13,17 @@ namespace Triangle_Vorm
         public double b; // вторая сторона
         public double c; // третья сторона
         public double h;
-        public Triangle(double A, double B, double C, double H)//конструктор 
+        public Triangle(double A, double B, double C)//конструктор 
         {
             a = A;
             b = B;
             c = C;
-            h = H;//высота
+
+        }
+        public Triangle(double H, double C)
+        {
+            c = C;
+            h = H;
         }
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
