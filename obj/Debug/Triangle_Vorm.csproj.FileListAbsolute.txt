@@ -15,3 +15,4 @@ C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm
 C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.csproj.CopyComplete
 C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.exe
 C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.pdb
+C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\obj\Debug\Triangle_Vorm.Form2.resources

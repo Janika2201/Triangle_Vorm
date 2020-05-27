@@ -55,5 +55,31 @@ namespace Triangle_Vorm
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Run_button_DobleClick(object sender, MouseEventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+        }
     }
 }
