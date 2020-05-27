@@ -25,6 +25,7 @@ namespace Triangle_Vorm
             c = C;
             h = H;
         }
+        //методы
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
             return Convert.ToString(a); // a - ссылка на внутренее поле обьекта класса
@@ -57,6 +58,13 @@ namespace Triangle_Vorm
             h = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return h;
         }
+        public double Area()//вычисление площади 
+        {
+            double S = 0;
+            S = (a * h) / 2;
+            return S;
+        }
+        //свойства
         public double GetSetA // свойство позволяющее установить либо изменить значение стороны а
         {
             get //устанавливаем
@@ -87,13 +95,28 @@ namespace Triangle_Vorm
                 h = value;
             }
         }
-        public bool ExistTriangle // свойство позволяющее установить, существует ои треугольник с задаными сторонами
+        public bool ExistTriangle // свойство позволяющее установить, существует ли треугольник с задаными сторонами
         {
             get
             {
-                if ((a > b + c) && (b > a + c) && (c > a + b)) //сумма 2 сторон должна быть больше третьей
-                    return false;
-                else return true;
+                if ((a < b + c) && (b < a + c) && (c < a + b))
+                    return true;
+                else return false;
+            }
+        }
+        public string TriangleofType//определение типа треугольника
+        {
+            get
+            {
+                if (a == b && b == c && c == a)
+                {
+                    return "Равносторонний";
+                }
+                else if (b == c || a == b || c == a)
+                {
+                    return "Равнобедренный";
+                }
+                else return "Разносторонний";
             }
         }
     }
