@@ -147,9 +147,3 @@ namespace Triangle_Vorm
         }
     }
 }
-
-
-
-
-
-
