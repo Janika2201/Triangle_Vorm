@@ -69,7 +69,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // listView1
             // 
@@ -100,7 +99,6 @@
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(100, 20);
             this.txtC.TabIndex = 3;
-            this.txtC.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtB
             // 
@@ -108,7 +106,7 @@
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(100, 20);
             this.txtB.TabIndex = 4;
-            this.txtB.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+           
             // 
             // txtA
             // 
@@ -125,7 +123,7 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Сторона А:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+         
             // 
             // label2
             // 
@@ -134,8 +132,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Сторона B:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Сторона B:";    
             // 
             // label3
             // 
@@ -145,7 +142,6 @@
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Сторона С:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -164,7 +160,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Работа с треугольником";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

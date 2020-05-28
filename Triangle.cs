@@ -12,7 +12,8 @@ namespace Triangle_Vorm
         public double a; // первая сторона
         public double b; // вторая сторона
         public double c; // третья сторона
-        public double h;
+        public double h;//высота
+        public string answer;// тип треугольника
         public Triangle(double A, double B, double C)//конструктор 
         {
             a = A;
@@ -38,9 +39,16 @@ namespace Triangle_Vorm
         {
             return Convert.ToString(c);
         }
+        public double HeightOfTriangle()//нахождение высоты
+        {
+            double p;
+            p = 0.5 * (a + b + c);
+            h = 2 * Math.Sqrt(p * (p - a) * (p - b) * (p - c)) / a;
+            return h;
+        }
         public double AreaOfTriangle() // нахождение площади
         {
-            double S = 0;
+            double S;
             S = 1 / 2 * b * h;//формула
             return S;
         }
@@ -104,20 +112,44 @@ namespace Triangle_Vorm
                 else return false;
             }
         }
-        public string TriangleofType//определение типа треугольника
+        public string TriangleofType()//определение типа треугольника
         {
-            get
+           if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
+           {
+                answer = "Тупоугольный";
+           }
+           else if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
+           {
+                answer = "Прямоугольный";
+           }
+           else
+           {
+                answer = "Остроугольный";
+           }
+            return answer;
+        }
+        public string ImageType()
+        {
+            string image = "";
+            if (answer == "Прямоугольный") //проверка условие
             {
-                if (a == b && b == c && c == a)
-                {
-                    return "Равносторонний";
-                }
-                else if (b == c || a == b || c == a)
-                {
-                    return "Равнобедренный";
-                }
-                else return "Разносторонний";
+                image = @"C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\kartinki\pramougolni.jpg";
             }
+            if (answer == "Остроугольный")// проверка условия
+            {
+                image = @"C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\kartinki\ostrougolnik.jpg";
+            }
+            if (answer == "Тупоугольный")//// проверка условия
+            {
+                image = @"C:\Users\Lenovo\source\repos\Triangle_Vorm\Triangle_Vorm\kartinki\typougolnik.jpg";
+            }
+            return image;
         }
     }
 }
+
+
+
+
+
+
