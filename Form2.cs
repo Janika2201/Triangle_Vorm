@@ -15,7 +15,13 @@ namespace Triangle_Vorm
         public Form2()
         {
             InitializeComponent();
+
+            for (int i = 0; i < 5; i++)
+            {
+                progressBar1.PerformStep();
+            }
         }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -23,6 +29,31 @@ namespace Triangle_Vorm
         }
 
         private void DoubleClick_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }

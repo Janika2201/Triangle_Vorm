@@ -51,7 +51,7 @@
             this.Run_button.FlatAppearance.BorderSize = 10;
             this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Run_button.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F);
-            this.Run_button.Location = new System.Drawing.Point(553, 98);
+            this.Run_button.Location = new System.Drawing.Point(556, 98);
             this.Run_button.Name = "Run_button";
             this.Run_button.Size = new System.Drawing.Size(203, 85);
             this.Run_button.TabIndex = 0;
@@ -106,7 +106,6 @@
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(100, 20);
             this.txtB.TabIndex = 4;
-           
             // 
             // txtA
             // 
@@ -123,7 +122,6 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Сторона А:";
-         
             // 
             // label2
             // 
@@ -132,7 +130,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Сторона B:";    
+            this.label2.Text = "Сторона B:";
             // 
             // label3
             // 

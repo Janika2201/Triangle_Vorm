@@ -66,12 +66,6 @@ namespace Triangle_Vorm
             h = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return h;
         }
-        public double Area()//вычисление площади 
-        {
-            double S = 0;
-            S = (a * h) / 2;
-            return S;
-        }
         //свойства
         public double GetSetA // свойство позволяющее установить либо изменить значение стороны а
         {
