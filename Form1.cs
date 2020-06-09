@@ -17,12 +17,21 @@ namespace Triangle_Vorm
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//кнопка запуск
         {
             double a, b, c;
-            a = Convert.ToDouble(txtA.Text); // считываем значение стороны а
-            b = Convert.ToDouble(txtB.Text);
-            c = Convert.ToDouble(txtC.Text);
+            if (txtA.Text == "" && txtB.Text == "" && txtC.Text == "")
+            {
+                a = 7;
+                b = 5;
+                c = 2;
+            }
+            else
+            {
+                a = Convert.ToDouble(txtA.Text);// считываем значение стороны а
+                b = Convert.ToDouble(txtB.Text);// считываем значение стороны b
+                c = Convert.ToDouble(txtC.Text);// считываем значение стороны c
+            }
             Triangle triangle = new Triangle(a, b, c);
             listView1.Items.Add("Сторона а");
             listView1.Items.Add("Сторона b");
