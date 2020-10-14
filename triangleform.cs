@@ -1,27 +1,26 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EO.Internal;
 
 namespace Triangle_Vorm
 {
-    class Triangle
+    class triangleform
     {
         public double a; // первая сторона
         public double b; // вторая сторона
         public double c; // третья сторона
         public double h;//высота
         public string answer;// тип треугольника
-        public Triangle(double A, double B, double C)//конструктор 
+        public triangleform(double A, double B, double C)//конструктор 
         {
             a = A;
             b = B;
             c = C;
 
         }
-        public Triangle(double H, double C)
+        public triangleform(double H, double C)
         {
             c = C;
             h = H;
@@ -108,36 +107,19 @@ namespace Triangle_Vorm
         }
         public string TriangleofType()//определение типа треугольника
         {
-           if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
-           {
+            if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
+            {
                 answer = "Тупоугольный";
-           }
-           else if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
-           {
+            }
+            else if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
+            {
                 answer = "Прямоугольный";
-           }
-           else
-           {
+            }
+            else
+            {
                 answer = "Остроугольный";
-           }
+            }
             return answer;
-        }
-        public string ImageType()
-        {
-            string image = "";
-            if (answer == "Прямоугольный") //проверка условие
-            {
-                image = @"C:\Users\opilane\source\repos\Triangle_Vorm\kartinki\pramougolni.jpg";
-            }
-            if (answer == "Остроугольный")// проверка условия
-            {
-                image = @"C:\Users\opilane\source\repos\Triangle_Vorm\kartinki\ostrougolnik.jpg";
-            }
-            if (answer == "Тупоугольный")//// проверка условия
-            {
-                image = @"C:\Users\opilane\source\repos\Triangle_Vorm\kartinki\typougolnik.jpg";
-            }
-            return image;
         }
     }
 }
