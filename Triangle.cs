@@ -12,21 +12,19 @@ namespace Triangle_Vorm
         public double a; // первая сторона
         public double b; // вторая сторона
         public double c; // третья сторона
-        public double h;//высота
+        public double h; // высота
         public string answer;// тип треугольника
-        public Triangle(double A, double B, double C)//конструктор 
+        public Triangle(double A, double B, double C)
         {
             a = A;
             b = B;
             c = C;
-
         }
-        public Triangle(double H, double C)
+        public Triangle(double H, double B)
         {
-            c = C;
+            b = B;
             h = H;
         }
-        //методы
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
             return Convert.ToString(a); // a - ссылка на внутренее поле обьекта класса
@@ -39,6 +37,10 @@ namespace Triangle_Vorm
         {
             return Convert.ToString(c);
         }
+        public string outputH()
+        {
+            return Convert.ToString(h);
+        }
         public double HeightOfTriangle()//нахождение высоты
         {
             double p;
@@ -49,7 +51,7 @@ namespace Triangle_Vorm
         public double AreaOfTriangle() // нахождение площади
         {
             double S;
-            S = 1 / 2 * b * h;//формула
+            S = 1 / 2 * b * h;
             return S;
         }
         public double Perimeter() // сумма всех сторон типо double
@@ -60,13 +62,12 @@ namespace Triangle_Vorm
         }
         public double Surface() // аналогично периметру
         {
-            double h = 0;
+            double s = 0;
             double p = 0;
             p = (a + b + c) / 2;
-            h = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
-            return h;
+            s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
+            return s;
         }
-        //свойства
         public double GetSetA // свойство позволяющее установить либо изменить значение стороны а
         {
             get //устанавливаем
@@ -88,38 +89,38 @@ namespace Triangle_Vorm
             set
             { c = value; }
         }
-        public double GetSetH//свойство высоты
-        {
-            get
-            { return h; }
-            set
-            {
-                h = value;
-            }
-        }
         public bool ExistTriangle // свойство позволяющее установить, существует ли треугольник с задаными сторонами
         {
             get
             {
-                if ((a < b + c) && (b < a + c) && (c < a + b))
+                if ((a < b + c) && (b < a + c) && (c < a + b)) //сумма 2 сторон должна быть больше третьей
                     return true;
                 else return false;
             }
         }
-        public string TriangleofType()//определение типа треугольника
+        public bool EquilateralTriangle // выяснение равносторонний треугольник
         {
-           if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
-           {
-                answer = "Тупоугольный";
-           }
-           else if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
-           {
-                answer = "Прямоугольный";
-           }
-           else
-           {
-                answer = "Остроугольный";
-           }
+            get
+            {
+                if ((a == b) || (a == c) || (b == c))
+                    return true;
+                else return false;
+            }
+        }
+        public string TypeOfTriangle()//определение типа треугольника
+        {
+            if ((a * a == b * b + c * c) || (b * b == c * c + a * a) || (c * c == a * a + b * b))
+            {
+                answer = "прямоугольный";
+            }
+            else if ((a * a > b * b + c * c) || (c * c > a * a + b * b) || (b * b > a * a + c * c))
+            {
+                answer = "тупоугольный";
+            }
+            else
+            {
+                answer = "остроугольный";
+            }
             return answer;
         }
         public string ImageType()

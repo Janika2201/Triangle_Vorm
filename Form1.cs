@@ -49,7 +49,7 @@ namespace Triangle_Vorm
             listView1.Items[5].SubItems.Add(Convert.ToString(triangle.Surface()));
             if (triangle.ExistTriangle) { listView1.Items[6].SubItems.Add("Существует"); }
             else listView1.Items[6].SubItems.Add("Не существует");
-            listView1.Items[7].SubItems.Add(triangle.TriangleofType());
+            listView1.Items[7].SubItems.Add(triangle.TypeOfTriangle());
             pictureBox1.Image = Image.FromFile(triangle.ImageType());
 
         }
